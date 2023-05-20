@@ -1,0 +1,188 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="student_attendance.js"></script>
+    <script defer>
+        let sid = "<%= studentData.sid %>";
+        displayStudent(sid);
+        console.log("works",sid);
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Bhaskar</h1>
+    <div class="student-data" id="student-data">
+        <p> <%= studentData.name %> </p>
+        <p> <%= studentData.email %> </p>
+        <p><%= studentData.contactNumber %></p>
+        <p><%= studentData.parentsContactNumber %></p>
+    </div>
+    <div id="data"></div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/js/student_attendance.js"></script>
+  <script defer>
+    let sid = "<%= studentData.sid %>";
+    displayStudent(sid);
+    console.log("works",sid);
+  </script>
+  <style>
+    body {
+      font-family:'Courier New', Courier, monospace;
+      margin: 0;
+      background-color: rgba(197, 197, 232, 0.941);
+      padding: 20px;
+      background-image:url("/img/iot2.jpg");
+
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      background-color: rgba(197, 197, 232, 0.941);
+      font-family:'Courier New', Courier, monospace;
+      text-align: center;
+      box-shadow: 2px 2px 2px 2px rgb(11, 11, 11);
+      border-radius: 5px;
+      padding: 5px;
+      
+    }
+
+    .student-data {
+      background-color: #f2f2f2;
+      padding: 40px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+
+      /* margin-left:30px; */
+      /* text-align: center; */
+      box-shadow:2px 2px grey;
+    }
+
+    .student-data p {
+      margin: 5px 0;
+      font-weight: bold;
+      font-family:'Courier New', Courier, monospace;
+    }
+
+    button {
+        color:rgb(241, 248, 255);
+        background-color: black;
+        padding:5px;
+        border-radius: 5px;
+
+    }
+    a {
+        color:white;
+        text-decoration: none;
+    }
+    button:hover{
+        background-color:blue;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .column {
+      flex: 30%;
+      padding: 20px;
+    }
+    img{
+        border-radius: 8px;
+        margin-left: 10px;
+    }
+  </style>
+  <title>Student Data</title>
+</head>
+<body>
+  <h1>Student Attendance Details</h1>
+  <div class="student-data" id="student-data">
+    <!-- <p><%= studentData.name %></p>
+    <p><%= studentData.email %></p>
+    <p><%= studentData.contactNumber %></p>
+    <p><%= studentData.parentsContactNumber %></p> -->
+
+    
+<div class="row">
+    <div class="column" id="student">
+    <p>Name: <%= studentData.name %></p>
+    <p>Email: <%= studentData.email %></p>
+    <p>Contact no: <%= studentData.contactNumber %></p>
+    <p>Parents contact no: <%= studentData.parentsContactNumber %></p>
+
+</div>
+<div class="column" id="student-plot">
+    <!-- <div class="row"> -->
+        
+       </div>
+    <!-- </div> -->
+</div>
+   </div>
+   <!-- <div class="student-data" id="student-data">
+   
+    <p>Name:Revanth</p>
+    <p>Email:abc@email.com</p>
+    <p>contact no:12345</p>
+    <p>Parents contact no:09876</p><br>
+    <div class="row">
+        <button>View Attendance Record</button>
+       <button style="background-color:rgb(60, 60, 238);color:black">send mail</button>
+    </div>
+
+   </div>
+    <div class="student-data" id="student-data">
+        <p>Name:Sridhar</p>
+        <p>Email:abc@email.com</p>
+        <p>contact no:12345</p>
+        <p>Parents contact no:09876</p><br>
+        <div class="row">
+            <button>View Attendance Record</button>
+           <button style="background-color:rgb(60, 60, 238);color:black">send mail</button>
+        </div>
+        
+    
+  </div> -->
+  <div id="data">
+   
+  </div>
+
+  <!-- <script>
+    // It seems like the studentData object is being passed from the server-side code
+    // You can remove the following script if you are not using server-side rendering
+
+    // Extracting the student data from the server-side object
+    let studentData = {
+      name: "<%= studentData.name %>",
+      email: "<%= studentData.email %>",
+      contactNumber: "<%= studentData.contactNumber %>",
+      parentsContactNumber: "<%= studentData.parentsContactNumber %>"
+    };
+
+    // Function to display student data
+    function displayStudent(sid) {
+      // Your implementation here
+    }
+
+    // Calling the displayStudent function with the student's ID (sid)
+    let sid = "<%= studentData.sid %>";
+    displayStudent(sid);
+    console.log("works", sid);
+  </script> -->
+</body>
+</html>

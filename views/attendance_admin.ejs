@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/attendance.css">
+    <script src="/js/student_attendance.js"></script>
+    <title>Admin page</title>
+</head>
+<body>
+    <h1>Attendance Information</h1>
+    <div class="card">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Roll Number</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(let i=0;i < students.length; i++) { if(students[i].sid != '0' ) { %>
+      <tr>
+        <td><%= students[i].name %></td>
+        <td><%= students[i].rollNumber %></td>
+        <td><button class="view details"><a href='/auth/studentstat/<%= students[i].sid %>'>View Details</a></button></td>
+      </tr>
+      <% }} %>
+    
+    </tbody>
+  </table>
+</div>
+
+
+
+
+    <!-- <div class="card">
+    <div class="student">
+        <p class="student-name">Saravana</p>
+        <p class="student-rollNumber">108120111</p>
+        <button class="view details"><a href='/auth/studentstat/1'>View Details</a></button>
+    </div>
+</div>
+<div class="card">
+    <div class="student">
+        <p class="student-name">Sridharan</p>
+        <p class="student-rollNumber">108120123</p>
+        <button class="view details"><a href='/auth/studentstat/2'>View Details</a></button>
+    </div>
+</div> -->
+    <!--
+    <% for(let i=0;i < students.length; i++) { if(students[i].sid != '0' ) { %>
+    <div class="student">
+        <p class="student-name"><%= students[i].name %></p>
+        <p class="student-rollNumber"> <%= students[i].rollNumber %></p>
+        <% let temp = students[i].sid %>
+        <button class="view details"><a href='/auth/studentstat/<%= temp %>'>View Details</a></button>
+    </div>
+    <% }} %>
+    -->
+</body>
+</html>

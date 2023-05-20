@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/student_attendance.js"></script>
+    <script defer>
+        let sid = "<%= studentData.sid %>";
+        displayStudent(sid);
+        console.log("works",sid);
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Bhaskar</h1>
+    <div class="student-data" id="student-data">
+        <p> <%= studentData.name %> </p>
+        <p> <%= studentData.email %> </p>
+        <p><%= studentData.contactNumber %></p>
+        <p><%= studentData.parentsContactNumber %></p>
+    </div>
+    <div id="data"></div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+body{
+    background-color:rgb(238, 242, 247);
+    background-image:url("../img/iot2.jpg");
+
+    background-repeat: no-repeat;
+	background-size: cover;
+    /*
+	backdrop-filter: blur(5px);
+    */
+}
+h1{
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    margin: -10px;
+    box-shadow: 2px 2px 2px rgb(46, 46, 255);
+    background-color: rgb(238, 242, 247);
+    /* border-radius: 20px; */
+
+}
+tr{
+    /* margin-left: 25%;
+    display:block;
+    justify-content: center;
+    width: 50%; */
+    /* font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    height:auto;
+    /* box-shadow: 2px 2px 2px rgb(145, 186, 243); */
+    text-align: center;
+    /* border-radius: 20px;; */
+}
+th{
+    font-family: 'Times New Roman', Times, serif;
+    font-family:'Courier New', Courier, monospace;
+    font-size: medium;
+    /*
+    font-weight: 300;
+    font-style: italic;
+    */
+}
+td{
+    font-family:'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bold;
+}
+a {
+    font-family:'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+}
+.card{
+    margin-top:14%;
+    margin-left: 25%;
+    /* display:block;
+    justify-content: center; */
+    width: 50%;
+    height:auto;
+    box-shadow: 2px 2px 2px rgb(145, 186, 243);
+    text-align: center;
+    /* border-radius: 20px; */
+}
+
+.student{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    /*
+    font-weight: bold;
+    */
+}
+button{
+    color:black;
+    list-style: none;
+    background-color: white;
+    border-radius: 10px;
+    padding:10px;
+
+
+}
+.button:hover{
+
+}
+
+table {
+  width: 100%;
+  /* border-collapse: collapse; */
+  border-radius: 20px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #666cb2;
+  /*
+  border-radius: 5px;
+  */
+}
+tr {
+  background-color: #dddeea;
+}
+/* .view details{
+   
+} */
